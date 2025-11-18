@@ -5,6 +5,6 @@ import projects.ApiBlog.model.Post;
 
 import java.util.List;
 
-public interface PostRepository extends JpaRepository<Post, Integer> {
+public interface PostRepository extends JpaRepository<Post, Long> {
     List<Post> findByUsuarioId(Long id);
 }

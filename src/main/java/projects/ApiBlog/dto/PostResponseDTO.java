@@ -1,10 +1,19 @@
 package projects.ApiBlog.dto;
 
+import projects.ApiBlog.model.Usuario;
+
 public class PostResponseDTO {
     private Long id;
     private String titulo;
     private String descripcion;
     private String username;
+
+    public PostResponseDTO() {
+
+    }
+
+    public PostResponseDTO(Long id, String titulo, String descripcion, Usuario usuario) {
+    }
 
     public Long getId() {
         return id;
